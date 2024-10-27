@@ -25,22 +25,22 @@ deploy:
 all: install lint test format deploy
 
 
-build:
+rust_build:
 	cd my_project && cargo build
 
-run:
+rust_run:
 	cd my_project && cargo run
 
-test:
+rust_test:
 	cd my_project && cargo test
 
-clean:
+rust_clean:
 	cd my_project && cargo clean
 
-format:
+rust_format:
 	cd my_project && cargo fmt
 
-lint:
+rust_lint:
 	cd my_project && cargo clippy -- -D warnings
 
-all: build run test clean format lint
+all: rust_build rust_run rust_test rust_clean rust_format rust_lint
