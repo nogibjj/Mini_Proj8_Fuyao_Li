@@ -1,4 +1,6 @@
-[![CI/CD](https://github.com/nogibjj/Mini_Proj7_Fuyao_Li/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Mini_Proj7_Fuyao_Li/actions/workflows/cicd.yml)
+[![rust_CICD](https://github.com/nogibjj/Mini_Proj8_Fuyao_Li/actions/workflows/rust_cicd.yml/badge.svg)](https://github.com/nogibjj/Mini_Proj8_Fuyao_Li/actions/workflows/rust_cicd.yml)
+[![python_CICD](https://github.com/nogibjj/Mini_Proj8_Fuyao_Li/actions/workflows/python_cicd.yml/badge.svg)](https://github.com/nogibjj/Mini_Proj8_Fuyao_Li/actions/workflows/python_cicd.yml)
+
 ## Mini_Project8
 
 Author: Fuyao Li
