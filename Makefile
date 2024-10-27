@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=main --cov=mylib test_*.py
+	python -m pytest -vv --cov=main test_*.py
 
 format:	
 	black *.py 
@@ -12,7 +12,7 @@ lint:
 	#disable comment to test speed
 	#pylint --disable=R,C --ignore-patterns=test_.*?py *.py mylib/*.py
 	#ruff linting is 10-100X faster than pylint
-	ruff check *.py mylib/*.py
+	ruff check *.py
 
 container-lint:
 	docker run --rm -i hadolint/hadolint < Dockerfile
@@ -23,3 +23,24 @@ deploy:
 	#deploy goes here
 		
 all: install lint test format deploy
+
+
+build:
+	cd my_project && cargo build
+
+run:
+	cd my_project && cargo run
+
+test:
+	cd my_project && cargo test
+
+clean:
+	cd my_project && cargo clean
+
+format:
+	cd my_project && cargo fmt
+
+lint:
+	cd my_project && cargo clippy -- -D warnings
+
+all: build run test clean format lint

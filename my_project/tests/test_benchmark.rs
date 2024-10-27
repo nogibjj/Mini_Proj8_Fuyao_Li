@@ -1,5 +1,4 @@
 use my_project::benchmark_file_io;
-use std::fs;
 
 #[test]
 fn test_benchmark_file_io() {
